@@ -26,7 +26,7 @@ window.addEventListener('resize',handleSizeChange)
 const [ show, setShow ] = useState(false)
 
 const handleScrollHeader = () => {
-  if(window.scrollY > 100){
+  if(window.scrollY > 50){
     setShow(true);
   }else{
     setShow(false)
@@ -45,11 +45,11 @@ useState(() => {
 
  
   return ( 
-   <header className= {`fixed w-full transition-all duration-120 ease-in-out  ${show && "bg-black "}`}>
+   <header className= {`fixed z-50 w-full transition-all duration-300 ease-in-out  ${show && "bg-black "}`}>
    
     <div className=' container max-auto flex items-center  '>
       <div >
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt=""  className='h-[60px] w-[80px] object-contain ml-10 '/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt=""  className='h-[60px] w-[80px] object-contain ml-14 '/>
 
       </div>
 
