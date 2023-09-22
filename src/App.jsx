@@ -7,7 +7,7 @@ import HomeScreen from './components/HomeScreen'
 function App() {
     
   return (
-    <div className=' h-screen bg-black'>
+    <div className=' h-full scroll-ml-14 bg-black'>
       <HomeScreen/>
 
    

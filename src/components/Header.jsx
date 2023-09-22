@@ -45,14 +45,15 @@ useState(() => {
 
  
   return ( 
-   <header className= {`fixed z-50 w-full transition-all duration-300 ease-in-out  ${show && "bg-black "}`}>
+   <header className= {`fixed z-50 w-full transition-all duration-300 ease-in  ${show && "bg-black "}`}>
    
     <div className=' container max-auto flex items-center  '>
       <div >
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt=""  className='h-[60px] w-[80px] object-contain ml-14 '/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt=""  className='h-[60px] w-[80px] object-contain ml-14 cursor-pointer'/>
 
       </div>
 
+      <div>
       {smallScreen ? (
         <DropDown/>
       ) : (
@@ -66,10 +67,7 @@ useState(() => {
         <Link to="/"className='hover:text-gray-400'>Browse by languages</Link>
       </div>
       )}
-
-
-      
-  
+      </div>
 
        <div className='ml-auto flex justify-around gap-7 items-center mr-11 md:ml-auto'>
 

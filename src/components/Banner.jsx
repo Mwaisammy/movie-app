@@ -2,6 +2,7 @@ import { Info, Play } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import requests from './requests'
 import axios from './axios'
+// import SkeletonLoader from './Skeleton';
 
 
 function Banner() {
@@ -34,12 +35,13 @@ function Banner() {
   return (
 
     <div>
+      
 
         <header className= " w-full h-[899px]"  style={{
 
-          backgroundImage: `linear-gradient(to bottom, transparent, rgba(37, 37, 37, 0.6), black),
-              linear-gradient(to top, transparent, rgba(37, 37, 37, 0.6), bg-gray-800),
-          url("https://images.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+          backgroundImage: `linear-gradient(to bottom, transparent, rgba(37, 37, 37, 0.61), black),
+              
+          url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
           backgroundPosition: 'center top',
           backgroundSize:"cover"
           // backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path")`,
